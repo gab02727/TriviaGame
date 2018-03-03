@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+       <!-- Start of the game -->
+		<div id = start_container>
+                <!-- Static logo -->
+                <h1 class = "logo">Nike Trivia</h1>
+    
+                <button id = start_button>Start</button>
+            </div>
+    
+    
+            <!-- During Gameplay Container -->
+            <div id = mid_game_container>
+                <!-- Static Logo -->
+                <h1 class = "logo">Nike Trivia</h1>
+                
+    
+                <!-- 90secs Timer -->
+                <h1 id = "timer_line">Time Remaining: <span id = "timer_number">90 Seconds</span></h1>
+    
+                <!-- Questions -->
+    
+                <h1>1. When was the first Air Max made?</h1>
+                
+                    <input type="radio" name="q1" value="1667">1667 
+                    <input type="radio" name="q1" value="1987">1987 
+                    <input type="radio" name="q1" value="1789">1789 
+                    <input type="radio" name="q1" value="1838">1838 
+                    
+    
+                <h1>2. Nike paid design student, Carolyn Davison, how much for their Swoosh Logo?</h1>
+                
+                    <input type="radio" name="q2" value="$20">$20
+                    <input type="radio" name="q2" value="$60">$60
+                    <input type="radio" name="q2" value="$35">$35 
+                    <input type="radio" name="q2" value="$4">$4 
+    
+    
+    
+                <h1>3. Who was Nike's first professional athlete endorsed?</h1>
+                
+                    <input type="radio" name="q3" value="Ilie Nastase">Ilie Nastase 
+                    <input type="radio" name="q3" value="Rutgers Daisy">Rutgers Daisy 
+                    <input type="radio" name="q3" value="Tish Cam">Tish Cam 
+                    <input type="radio" name="q3" value="Aliko Dangote">Aliko Dangote 
+    
+    
+                <h1>4. What was the first clothing brand to partner with Nike?</h1>
+                
+                    <input type="radio" name="q4" value="And One">And One 
+                    <input type="radio" name="q4" value="Ariel">Ariel
+                    <input type="radio" name="q4" value="Nike">Nike
+                    <input type="radio" name="q4" value="Fubu">Fubu 
+                    <input type="radio" name="q4" value="Stussy">Stussy 
+    
+    
+                <h1>5. When was the first Air Force 1 made?</h1>
+                
+                    <input type="radio" name="q5" value="1999">1999 
+                    <input type="radio" name="q5" value="1991">1991
+                    <input type="radio" name="q5" value="2017">2017
+                    <input type="radio" name="q5" value="1900">1900
+                    <input type="radio" name="q5" value="1982">1982 
+                
+                <h1>6. Who designed the Air Max technology?</h1>
+                
+                    <input type="radio" name="q6" value="Nick Yao">Nick Yao
+                    <input type="radio" name="q6" value="Harvard Mike">Harvard Mike 
+                    <input type="radio" name="q6" value="Olu Jay">Olu Jay 
+                    <input type="radio" name="q6" value="Tinker Hatfield">Tinker Hatfield 
+                    
+    
+                <h1>7. When was the first Air Jordan 1's released to the public?</h1>
+                
+                    <input type="radio" name="q7" value="2019">2019 
+                    <input type="radio" name="q7" value="1986">1986
+                    <input type="radio" name="q7" value="1990">1990 
+                    <input type="radio" name="q7" value="1985">1985
+    
+                <h1>8. Nike's first sneaker design goes under what name today?</h1>
+              
+                    <input type="radio" name="q8" value="Nikky Busch">Nikky Busch 
+                    <input type="radio" name="q8" value="Livingston Stun">Livingston Stun 
+                    <input type="radio" name="q8" value="Colly Arms">Colly Arms 
+                    <input type="radio" name="q8" value="Cortez">Cortez 
+    
+                <h1>9. Which state was Nike's first retail space was opened in</h1>
+                
+                    <input type="radio" name="q9" value="Texas">Texas 
+                    <input type="radio" name="q9" value="Illinois">Illinois 
+                    <input type="radio" name="q9" value="California">California
+                    <input type="radio" name="q9" value="Atlanta">Atlanta
+    
+                <h1>10. Nike was originally a distribution company for which brand?</h1>
+                
+                    <input type="radio" name="q10" value="Sean John">Sean John
+                    <input type="radio" name="q10" value="Fubu">Fubu
+                    <input type="radio" name="q10" value="Nike">Nike 
+                    <input type="radio" name="q10" value="Onitsuka Tiger">Onitsuka Tiger
+    
+    
+                    <br>
+    
+    
+                <button id = done_button>Done!</button>
+    
+            </div>
+    
+    
+    
+    
+            <!-- End of the game -->
+            <div id = end_container>
+                <!-- Static Game Logo -->
+                <h1 class = "logo">Nike Trivia</h1>
+    
+                <h1 id = "done">All Done!</h1>
+                <br>
+    
+                <h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+                <h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+                <h1>Unanswered: <span id = "unanswered">0</span></h1>
+            </div>
+                
+    
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
